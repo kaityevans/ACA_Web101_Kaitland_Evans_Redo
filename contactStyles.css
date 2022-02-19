@@ -1,0 +1,64 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    background-color: #CDB2AD;
+}
+
+span {
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding: 50px;
+    margin: 70px;
+    border: #3F364E groove 15px; 
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.box1, .box2 {
+    /* display: flex; */
+    align-self: center;
+   border: #3F364E solid 5px; 
+   padding: 50px;
+}
+
+.checkboxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #7E6C9B;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    color: #3F364E;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: bold;
+}
+
+h4 {
+    color: #3F364E;
+    font-size: 25px;
+}
+
+textarea, input {
+    border: #3F364E solid 5px;
+    background-color: #7E6C9B;
+    fill: #7E6C9B;
+}
+
+button {
+    display: flex;
+    justify-content: space-around;
+}
