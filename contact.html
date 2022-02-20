@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="./contactStyles.css">
+    <!-- <link rel="results" href="results.html"> -->
 </head>
 <body>
     <div id="TopContainer">
@@ -21,11 +22,12 @@
             <ul>
               <li>
                 <label for="name">Name</label> 
-              <input type="text" name="name" id="name" >
+              <input type="text" name="name" id="name" placeholder="First & Last Name">
               </li>
               <li>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" >
+                <input type="email" name="email" id="email" required
+                placeholder="username@beststartupever.com" pattern=".+@beststartupever\.com">
               </li>
               <li>
                 <label for="age">Age</label>
@@ -33,7 +35,7 @@
               </li>
               <li>
                 <label for="date">Birthdate</label>
-                <input type="date" name="date" id="date" min="2019-06-10">
+                <input type="date" name="date" id="date" min="2019-06-10" >
               </li>
             </ul>
           </div>
@@ -64,18 +66,27 @@
           <ul>
             <li>
               <label for="message">Message</label>
-              <textarea id="message" name="message"></textarea>
+              <textarea id="message" name="message" minlength="20" maxlength="500" placeholder="Please write your message here."></textarea>
               <input type="hidden" name="hidden" value="hi">
             </li>
             <li>
               <label for="phone">Phone</label>
-              <input type="tel" name="phone" id="phone">
+              <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890">
+            </li>
+            <h4>Do you want us to contact you?</h4>
+               <label for="yes">Yes</label>
+               <input type="radio" name="answer" id="yes" value="yes">
+               <label for="No">No</label>
+               <input type="radio" name="answer" id="no" value="no">
+            <li>
+              
             </li>
           </ul>
       </div>
       <div>
-        <!-- <button type="reset">Reset</button> -->
-        <button link rel="results" href="results.html" type="submit">Submit</button>
+        <a href="results.html">
+          <button required="email">Submit</button>
+        </a>
       </div>
            
     </span>

@@ -8,7 +8,6 @@ body {
 span {
     display: flex;
     justify-content: space-evenly;
-    
     padding: 50px;
     margin: 70px;
     border: #3F364E groove 15px; 
@@ -45,6 +44,15 @@ h1 {
     font-size: 20px;
     font-weight: 200;
     font-style: bold;
+
+    /* input:invalid {
+        border: 2px dashed red;
+      }
+      
+      input:valid {
+        border: 2px solid black;
+      } */
+      
 }
 
 h4 {
@@ -61,4 +69,61 @@ textarea, input {
 button {
     display: flex;
     justify-content: space-around;
+}
+
+  /* Extra Small and up (Portrait Phones) */
+
+  /* Small and up (Landscape Phones) */
+  @media (max-width: 576px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        /* flex-flow: column;
+        align-self: center; */
+    }
+    span {
+        /* display: grid;
+        grid-template-columns: auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .box1, .box2 {
+        /* display: flex; */
+        align-self: center;
+        justify-content: center;
+       border: #3F364E solid 0px; 
+    }
+    .box2 {
+        display: flex;
+        flex-flow: column;
+        .checkboxes {
+            display: grid;
+            grid-template-columns: auto;
+        }
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    span {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
 }
